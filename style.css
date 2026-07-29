@@ -1,0 +1,171 @@
+@layer global {
+    /* micro-5-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Micro 5';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/micro-5-v2-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* monofett-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Monofett';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/monofett-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* silkscreen-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Silkscreen';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/silkscreen-v6-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* silkscreen-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Silkscreen';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/silkscreen-v6-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/inter-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* single-day-regular - korean */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Single Day';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/single-day-v19-korean-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Fonts */
+:root {
+    --fs-15: calc(15 / 16 * 1rem);
+    --fs-16: calc(16 / 16 * 1rem);
+    --fs-24: calc(24 / 16 * 1rem);
+    --fs-32: calc(32 / 16 * 1rem);
+    --fs-36: calc(36 / 16 * 1rem);
+    --fs-40: calc(40 / 16 * 1rem);
+    --fs-48: calc(48 / 16 * 1rem);
+    --fs-64: calc(64 / 16 * 1rem);
+    --fs-80: calc(80 / 16 * 1rem);
+
+    /* Mobile FSize */
+    --font-size-banner-title: var(--fs-40);
+    --font-size-banner-name: var(--fs-15);
+    --font-size-greeting: var(--fs-40);
+    --font-size-name: var(--fs-32);
+    --font-size-shortabout: var(--fs-24);
+    --font-size--topnav: var(--fs-16);
+    --font-size--sectiontitle: var(--fs-16);
+    --font-size-headerfooter: var(--fs-32);
+
+
+    /* Desktop FSize*/
+    @media (width >= calc(600 / 16 * 1rem)){
+        --font-size-banner-title: var(--fs-80);
+        --font-size-banner-name: var(--fs-32);
+        --font-size-greeting: var(--fs-64);
+        --font-size-name: var(--fs-64);
+        --font-size-shortabout: var(--fs-48);
+        --font-size-topnav: var(--fs-32);
+        --font-size-sectiontitle: var(--fs-36);
+        --font-size-headerfooter: var(--fs-48);
+    }
+}
+
+
+
+/* Colors */
+:root {
+    --c-flagred: hsl(350, 96%, 43%);
+    --c-punchred: hsl(353, 86%, 54%);
+    --c-icewhite: hsl(197, 24%, 94%);
+    --c-lightgray: hsl(0, 0%, 90%);
+    --c-black: hsl(0, 0%, 0%);
+    --c-white: hsl(0, 0%, 100%);
+    
+    --color-main-bg: var(--c-icewhite);
+    --color-banner-bg: var(--c-flagred);
+    --color-intro-bg: var(--c-punchred);
+    --color-menu-bg: var(--c-lightgray);
+
+    --color-text-blk: var(--c-black);
+    --color-text-white: var(--c-white);
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Single Day", Arial, Helvetica, sans-serif; /* FOR MAIN FONT */
+    line-height: 1.3;
+    color: var(--color-text-blk);
+}
+
+
+h1, h2, h3 {
+    line-height: 1.1;
+}
+h1 {
+    font-size: var(--font-size-greeting);
+}
+h2 {
+    font-size: var(--font-size-sectiontitle);
+}
+h3 {
+    font-size: var(--font-size-headerfooter);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+img,
+picture,
+svg {
+    max-width: 100%
+    display: block;
+}
+
+.wrapper {
+    width: min(calc(100% - 50px), calc(1200 / 16 * 1rem));
+    margin-inline: auto;
+}
+}
+
+
+@layer component {
+
+}
+
+
+@layer utility {
+    .visually-hidden {
+  position: absolute;
+  left:     -10000px;
+  top:      auto;
+  width:    1px;
+  height:   1px;
+  overflow: hidden;
+}
+}
+
