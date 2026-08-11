@@ -2,26 +2,113 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Engineering Portfolio</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/style.css"/>
     <script src="/script.js" defer></script>
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
   </head>
+
   <body>
-    <div class="wrapper">
-      <h1>Engineering Portfolio</h1>
-      <h2>A portfolio showcasing my skills</h2>
-      <p>
-        I am an engineering student currently upgrading my skills and showcasing
-        it into this portfolio for future use. Possible contents: Hardware skills,
-        computer skills, web development etc... This portfolio is not yet
-        complete. Started making the website in July 20, 2026
-      </p>
-    </div>
+    <header id="main-header">
+      <div class="header">
+        <div class = "max-width">
+          <!-- COMPONENT 1: The Title -->
+          <h1 class="logo">Engineering Portfolio</h1>
+          <span class="name">jasminellvm</span>   <!-- to be on same row -->
+        </div>
+      </div>
+        <!-- COMPONENT 2: Navigation -->
+      <nav class="top-nav">
+        <div class="max-width">
+          <a href="#aboutme">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#achievements">Achievements</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="max-width">
+          <div class="hero-content">
+            <div class="greet-first-line">
+              <h1>Hi! My name is....</h1>
+            </div>
+            <div class="greet-second-line">
+              <h2>Jasmin Ellaine</h2>
+            </div>
+            <div class="greet-third-line">
+              <h3>A Computer Engineering Student</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 1. ABOUT ME SECTION -->
+      <section class="aboutme" id="aboutme">
+        <div class="max-width">
+          <h2>About Me</h2>
+          <p>Your paragraph text goes here...</p>
+        </div>
+      </section>
+
+      <!-- 2. SKILLS SECTION -->
+      <section class="skills" id="skills">
+        <div class="max-width">
+          <h2>Skills</h2>
+          <p>Your skills list goes here...</p>
+        </div>
+      </section>
+
+      <!-- 3. PROJECTS SECTION -->
+      <section class="projects" id="projects">
+        <div class="max-width">
+          <h2>Projects</h2>
+          <p>Your skills list goes here...</p>
+        </div>
+      </section>
+
+      <!-- 4. ACHIEVEMENTS SECTION -->
+      <section class="achievements" id="achievements">
+        <div class="max-width">
+          <h2>Achievements</h2>
+          <p>Your skills list goes here...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer aria-label="Contact and Social Media">
+      <!-- The invisible label for screen readers -->
+      <div class="max-width">
+        <div class="social-icons-container">
+          <!-- Gmail Link -->
+          <a
+            href="mailto:manguray.jasminellaine@gmail.com"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="/img/gmail-logo.svg" alt="Google Email" />
+            <!-- Mandatory alt text for the icon -->
+          </a>
+
+          <!-- GitHub Link -->
+          <a href="https://github.com" target="_blank" rel="noopener">
+            <img src="/img/github-logo.svg" alt="GitHub Profile" />
+            <!-- Mandatory alt text for the icon -->
+          </a>
+
+          <!-- LinkedIn Link -->
+          <a href="https://linkedin.com" target="_blank" rel="noopener">
+            <img src="/img/linkedin-logo.svg" alt="LinkedIn Profile" />
+            <!-- Mandatory alt text for the icon -->
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
